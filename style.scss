@@ -1,0 +1,214 @@
+body{
+
+
+}
+
+$color_red:#F83718;
+$color_blue:#01AFEB;
+$color_grey:#F9F9F9;
+
+$h1_fs:50px;
+$h2_fs:40px;
+$h3_fs:34px;
+$h4_fs:24px;
+
+$p_fs:16px;
+
+$link_fs:14px;
+.tst{
+    width: 50px;
+    height: 50px;
+    background-color: #F83718;
+}
+.button{
+    
+    background-color: $color_red;
+    padding: 9px 20px 9px 20px;
+    max-width: 50%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.button:hover{
+    opacity: 0.7;
+}
+.button:active{
+    opacity: 0.5;
+}
+
+section{
+    margin: 0 0 150px 0;
+}
+
+
+.text-white{
+    color:white;
+}
+.text-red{
+    color:$color_red
+}
+
+.link-text{
+    font-weight: 500;
+    font-size: $link_fs;
+    line-height: 130%;
+
+    color:black;
+    text-decoration: none;
+}
+
+h1{
+    font-weight: 700;
+    font-size: $h1_fs;
+    line-height: 120%;
+}
+h2{
+    font-weight: 700;
+    font-size: $h2_fs;
+    line-height: 120%;
+}
+h3{
+    font-weight: 700;
+    font-size: $h3_fs;
+    line-height: 120%;
+}
+h4{
+    font-weight: 700;
+    font-size: $h4_fs;
+    line-height: 120%;
+}
+p{
+    font-weight: 400;
+    font-size: $p_fs;
+    line-height: 150%;
+}
+
+
+.hero{
+    background-color: $color_red;
+}
+
+.gallery{
+
+
+    background-color: #F9F9F9;
+
+    padding: 100px 0 100px 0;
+    
+    &_block{
+        background-color: white;
+        
+    }
+}
+
+.cloud{
+    background-color: $color_blue;
+    padding: 100px 0 100px 0;
+}
+
+.dev{
+    &__container{
+        
+    }
+
+    &__block{
+        border: 5px solid $color_grey;
+        transition: all .5s ease-in-out;
+
+        
+        
+    }
+    
+    &__nohover{
+        display: block;
+        padding: 50px 60px 50px 60px;
+        
+    }
+    &__hover{
+        display: none;
+
+        
+        align-items: center;
+        justify-content: center;
+        padding: 30px 40px 30px 40px;
+    }
+}
+
+.dev__block:hover {
+    display: flex;
+    background-color: $color_red;
+    
+}
+
+.dev__block:hover .dev__hover{
+    display: flex;
+    
+}
+.dev__block:hover .dev__nohover{
+    display: none;
+    
+}
+
+
+
+.footer{
+    &__quest{
+        background-color: $color_red;
+    }
+    &__contact{
+        background-color: $color_grey;
+    }
+}
+
+
+
+@media (max-width:576px) {
+    
+    $h1_fs:40px;
+    $h2_fs:30px;
+    $h3_fs:24px;
+    $h4_fs:17px;
+
+    $p_fs:14px;
+
+    $link_fs:14px;
+
+
+    h1{
+        font-weight: 700;
+        font-size: $h1_fs;
+        line-height: 120%;
+    }
+    h2{
+        font-weight: 700;
+        font-size: $h2_fs;
+        line-height: 120%;
+    }
+    h3{
+        font-weight: 700;
+        font-size: $h3_fs;
+        line-height: 120%;
+    }
+    h4{
+        font-weight: 700;
+        font-size: $h4_fs;
+        line-height: 120%;
+    }
+    p{
+        font-weight: 400;
+        font-size: $p_fs;
+        line-height: 150%;
+    }
+
+
+    
+    
+    .button{
+        min-width: 100%;
+    }
+    
+}
